@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+a.button,
+button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+a.button:hover,
+button:hover {
+  background: #1d4ed8;
+}
+
+button.delete-btn {
+  background: #dc2626;
+}
+
+button.delete-btn:hover {
+  background: #b91c1c;
+}
+
+input[type="text"],
+input[type="file"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: none;
+  background: #1e293b;
+  color: #e5e7eb;
+}
+
+input::placeholder {
+  color: #94a3b8;
+}
+
+#cdListContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cd-item {
+  background: #020617;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.cd-item h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.cd-item img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 0.6rem;
+}
+
+#RandomCdDisplay {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: #020617;
+  border-radius: 12px;
+  max-width: 400px;
+}
+
+#RandomCdDisplay img {
+  display: block;
+  margin-top: 1rem;
+  max-width: 100%;
+  border-radius: 8px;
+}
